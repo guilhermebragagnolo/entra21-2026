@@ -11,7 +11,8 @@ public class Lista2 {
 		//exercicio4();
 		//exercicio5();
 		//exercicio6();
-		exercicio7();
+		//exercicio7();
+		exercicio8();
 		
 	}
 	//Nível básico
@@ -123,5 +124,23 @@ public class Lista2 {
 		}else {
 			System.out.println("Excelente!");
 		}
+	}
+	static void exercicio8() {
+		Scanner sc = new Scanner(System.in);
+		
+	System.out.println("Digite o tamanho do primeiro lado: ");
+	int a = sc.nextInt();
+	
+	System.out.println("Digite o tamanho do segundo lado: ");
+	int b = sc.nextInt();
+	
+	System.out.println("Digite o tamanho do terceiro lado: ");
+	int c = sc.nextInt();
+	
+	if (a + b > c && a + c > b && b + c > a) {
+		System.out.println("Os lados formam um triângulo!");
+	}else { 
+		System.out.println("Os lados não formam um triângulo!");
+	}
 	}
 }
