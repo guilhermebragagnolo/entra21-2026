@@ -10,7 +10,8 @@ public class Lista2 {
 		//exercicio3();
 		//exercicio4();
 		//exercicio5();
-		exercicio6();
+		//exercicio6();
+		exercicio7();
 		
 	}
 	//Nível básico
@@ -105,6 +106,22 @@ public class Lista2 {
 			System.out.println("O segundo número é o maior");
 		}else {
 			System.out.println("O terceiro número é o maior");
+		}
+	}
+	static void exercicio7() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Informe sua nota: ");
+		int nota = sc.nextInt();
+		
+		if (nota <= 4) {
+			System.out.println("Insuficiente");
+		}else if (nota <= 6) {
+			System.out.println("Regular");
+		}else if (nota <= 8) {
+			System.out.println("Bom");
+		}else {
+			System.out.println("Excelente!");
 		}
 	}
 }
